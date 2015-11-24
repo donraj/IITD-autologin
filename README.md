@@ -10,7 +10,7 @@ grab the code!
 select the options in the first few active lines of "autocomplete.py" 
 
 ```bash
-$ python autocomplete.py 
+$ python autocomplete.py p
 ```
 
 It shall prompt for password/you may just put it in the file in plain text.
@@ -38,7 +38,7 @@ You must be having an amazon VM for yourself! You have it right? *
 And suban and his monstrous firewalls might be the massive roadblock to you and your aws instances. Although the user with bloated wallet might buy a good 3G data bundle; but lo behold, we can talk to your vm via the proxy server:
 
 Mac users:
-* Place the magical personal_bash_fns.sh into a file say .personal into your $HOME == ~/ directory.
+* Place the magical personal.sh into a file say .personal into your $HOME == ~/ directory.
 * Add this line at the end to your .bash_profile:
 ```bash
 source ~/.personal
