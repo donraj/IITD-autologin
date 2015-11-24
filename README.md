@@ -32,7 +32,7 @@ Cheers!
 Mayank
 
 
-# Other proxy intel
+# ----------- Other proxy intel ------------
 ## sshing into your AWS servers:
 You must be having an amazon VM for yourself! You have it right? *
 And suban and his monstrous firewalls might be the massive roadblock to you and your aws instances. Although the user with bloated wallet might buy a good 3G data bundle; but lo behold, we can talk to your vm via the proxy server:
@@ -44,7 +44,7 @@ Mac users:
 source ~/.personal
 ```
 
-* FOR EXACTLY ONCE somehow ssh into your aws instance (either by 3g or by ssh_torr*)
+* FOR EXACTLY ONCE somehow ssh into your aws instance (either by 3g or by ssh_torr**)
 * Edit the /etc/sshd_config and add this line just below "Port 22"
 ```bash
 Port 443 
@@ -59,11 +59,12 @@ sudo service ssh restart
 ** To use ssh_torr, you just need to download the torr browser and start it. after this you can ssh_torr your AWS machine. BUT ITS SLOW. The good thing is that you need to do this only once.
 
 # Why you should have your AWS VM?
-- suban hates torrenting!
-- suban does not like you to play dota, aoe on gameranger etc!
-- suban has logs of 3 months of all the CDNs and hostnames which served you your flavour of delicious multimedia.
+* suban hates torrenting!
+* suban does not like you to play dota, aoe on gameranger etc!
+* suban has logs of 3 months of all the CDNs and hostnames which served you your flavour of delicious multimedia.
+* Its free for an year, and you can get 100$ credits by winning coding contests :P
 
-* quick torrenting via koding VMs:
+# Bonus: Quick torrenting via koding VMs:
 * Make an account on koding, make vm, ...
 * edit the /etc/sshd_config and add this line just below "Port 22"
 ```bash
@@ -85,8 +86,10 @@ This creates a socks proxy server tunneled through your instance.
 Enjoy suban free browsing, torrenting by pointing the browser/utorrent to that proxy. 
 
 * To avoid vm shutdown due to inactivity in the koding browser, use the easy auto refresh extension and keep a terminal open inside the browser.
-* 
+
 P.S: I have an imacro script as well, but they banned by account for its use, and have stopped responsing because I kept my VM on for a whole week contiously. 
+
+P.S: The limit is 15 GB/week perhaps. Use multiple accounts! Its easy!
 
 
 Cheers again brave soul!
