@@ -8,11 +8,18 @@ The script speaks about its status on the mac and chats in color!
 # Usage
 grab the code!
 select the options in the first few active lines of "autocomplete.py" 
+
+```bash
 $ python autocomplete.py 
-It shall prompt for password/ you may just put it in the file as well.
+```
+
+It shall prompt for password/you may just put it in the file in plain text.
 
 To kill all running instances:
+
+```bash
 $ sh killer.sh
+```
 
 * Ideally run it on a screen and detach it *
 
