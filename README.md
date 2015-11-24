@@ -2,10 +2,10 @@
 Here is the autologin script for IITD mac and linux (on a vm/rPi) users. 
 The script is solid metal - takes care of all sort of state changes that occur example snoring-laptop/router-reset.
 
-# The icing:
+# The icing
 The script speaks about its status on the mac and speaks in color!
 
-# Usage:
+# Usage
 grab the code!
 select the options in the first few active lines of "autocomplete.py" 
 $ python autocomplete.py 
