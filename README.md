@@ -48,12 +48,15 @@ source ~/.personal
 * Edit the /etc/sshd_config and add this line just below "Port 22"
 ```bash
 Port 443 
+
 ```
+* Then do:
+```bash
+sudo service ssh restart
+```
+* Hurray, you can now ssh into your instance
 
-* 
-6. Hurray, you can now ssh into your instance
-
-# To use ssh_torr, you just need to download the torr browser and start it. after this you can ssh_torr your AWS machine. BUT ITS SLOW. The good thing is that you need to do this only once.
+** To use ssh_torr, you just need to download the torr browser and start it. after this you can ssh_torr your AWS machine. BUT ITS SLOW. The good thing is that you need to do this only once.
 
 # Why you should have your AWS VM?
 - suban hates torrenting!
@@ -61,19 +64,31 @@ Port 443
 - suban has logs of 3 months of all the CDNs and hostnames which served you your flavour of delicious multimedia.
 
 * quick torrenting via koding VMs:
-1. Make an account on koding, make vm, ...
-2. edit the /etc/sshd_config and add this line just below "Port 22"
+* Make an account on koding, make vm, ...
+* edit the /etc/sshd_config and add this line just below "Port 22"
+```bash
 Port 443 
-3. Restart ssh service: sudo service ssh restart
-4. On your machine do:
 
+```
+* Then do:
+```bash
+sudo service ssh restart
+```
+
+* Restart ssh service: sudo service ssh restart
+* On your machine do:
+```bash
 ssh_btech <username>@<IP> -D 8080
+```
 
 This creates a socks proxy server tunneled through your instance.
 Enjoy suban free browsing, torrenting by pointing the browser/utorrent to that proxy. 
 
-5. To avoid vm shutdown due to inactivity in the koding browser, use the easy auto refresh extension and keep a terminal open.
-
+* To avoid vm shutdown due to inactivity in the koding browser, use the easy auto refresh extension and keep a terminal open inside the browser.
+* 
 P.S: I have an imacro script as well, but they banned by account for its use, and have stopped responsing because I kept my VM on for a whole week contiously. 
 
 
+Cheers again brave soul!
+
+Mayank
