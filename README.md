@@ -3,7 +3,7 @@ Here is the autologin script for IITD mac and linux (on a vm/rPi) users.
 The script is solid metal - takes care of all sort of state changes that occur example snoring-laptop/router-reset.
 
 # The icing
-The script speaks about its status on the mac and speaks in color!
+The script speaks about its status on the mac and chats in color!
 
 # Usage
 grab the code!
