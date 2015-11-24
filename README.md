@@ -21,7 +21,7 @@ To kill all running instances:
 $ sh killer.sh
 ```
 
-* Ideally run it on a screen and detach it *
+* Ideally run it on a screen and detach it
 
 P.S: This is derived from a bash script by the brave soul Shivanker who enlightened the house of Vindhyachal till 2014 when Mark Zuckerberg took him!
 
