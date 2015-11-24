@@ -28,4 +28,52 @@ P.S: This is derived from a bash script by the brave soul Shivanker who enlighte
 DISCLAIMER: This way of logging in is a little insecure to man in the middle attacks. btw, did you install the IITD-certificate? :P
 
 Cheers!
+
 Mayank
+
+
+# Other proxy intel
+## sshing into your AWS servers:
+You must be having an amazon VM for yourself! You have it right? *
+And suban and his monstrous firewalls might be the massive roadblock to you and your aws instances. Although the user with bloated wallet might buy a good 3G data bundle; but lo behold, we can talk to your vm via the proxy server:
+
+Mac users:
+* Place the magical personal_bash_fns.sh into a file say .personal into your $HOME == ~/ directory.
+* Add this line at the end to your .bash_profile:
+```bash
+source ~/.personal
+```
+
+* FOR EXACTLY ONCE somehow ssh into your aws instance (either by 3g or by ssh_torr*)
+* Edit the /etc/sshd_config and add this line just below "Port 22"
+```bash
+Port 443 
+```
+
+* 
+6. Hurray, you can now ssh into your instance
+
+# To use ssh_torr, you just need to download the torr browser and start it. after this you can ssh_torr your AWS machine. BUT ITS SLOW. The good thing is that you need to do this only once.
+
+# Why you should have your AWS VM?
+- suban hates torrenting!
+- suban does not like you to play dota, aoe on gameranger etc!
+- suban has logs of 3 months of all the CDNs and hostnames which served you your flavour of delicious multimedia.
+
+* quick torrenting via koding VMs:
+1. Make an account on koding, make vm, ...
+2. edit the /etc/sshd_config and add this line just below "Port 22"
+Port 443 
+3. Restart ssh service: sudo service ssh restart
+4. On your machine do:
+
+ssh_btech <username>@<IP> -D 8080
+
+This creates a socks proxy server tunneled through your instance.
+Enjoy suban free browsing, torrenting by pointing the browser/utorrent to that proxy. 
+
+5. To avoid vm shutdown due to inactivity in the koding browser, use the easy auto refresh extension and keep a terminal open.
+
+P.S: I have an imacro script as well, but they banned by account for its use, and have stopped responsing because I kept my VM on for a whole week contiously. 
+
+
