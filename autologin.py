@@ -106,7 +106,7 @@ def do_action(sid, action):
     
 
 def logout(sid):
-    response = do_action(sid, 'logout')
+    response = do_action(sid, 'logout') or ''
     if 'you have logged out' in response:
         print Info("Successfully Logged Out")
         speak('Successfully Logged Out')
@@ -115,7 +115,7 @@ def logout(sid):
 
 
 def refresh(sid):   
-    response = do_action(sid, 'Refresh')
+    response = do_action(sid, 'Refresh') or ''
     if 'logged in successfully' not in response:
         err('refresh-fail')
         return False 
