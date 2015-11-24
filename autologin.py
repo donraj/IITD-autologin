@@ -11,7 +11,7 @@ PHD = 61
 
 # ---- tweak here -----
 SELECT = DUAL
-RECOVERY_TIME = 2 # the lower the faster but, it shall take more CPU cycles.
+RECOVERY_TIME = 10 # the lower the faster but, it shall take more CPU cycles.
 
 proxy_add='https://10.10.78.%d/cgi-bin/proxy.cgi'%SELECT
 username='cs5110284'
@@ -160,7 +160,7 @@ while True:
             sid = None
             continue
 
-    time.sleep(12)
+    time.sleep(120)
     if not refresh(sid):
         sid = None
     else:
