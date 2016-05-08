@@ -61,7 +61,7 @@ def speak(msg):
     from sys import platform as _platform
     if _platform == "darwin":
         cmd = 'say %s'%msg
-    get_output(cmd)
+    	get_output(cmd)
 
 
 def get_sessionid(): 
@@ -103,7 +103,7 @@ def do_action(sid, action):
         (sid, action, proxy_add)
     )
     return get_output(cmd)
-    
+
 
 def logout(sid):
     response = do_action(sid, 'logout') or ''
